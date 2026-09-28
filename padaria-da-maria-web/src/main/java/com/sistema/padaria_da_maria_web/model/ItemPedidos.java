@@ -11,9 +11,13 @@ import java.time.LocalDateTime;
 @Table(name = "item_pedidos")
 public class ItemPedidos {
     @Id
-    private Integer id;
-
+    @Column(name = "idItem")
+    private Integer idItem;
+    
+    
+    @Column(name = "data_pedido")
     private LocalDateTime dataPedido;
+    
     private double quantidade;
     private double valorUnitario;
     
@@ -28,8 +32,8 @@ public class ItemPedidos {
         
     }
 
-    public ItemPedidos(Integer id, LocalDateTime dataPedido, double quantidade, double valorUnitario, Integer idPedido, Integer idProduto) {
-        this.id = id;
+    public ItemPedidos(Integer idItem, LocalDateTime dataPedido, double quantidade, double valorUnitario, Integer idPedido, Integer idProduto) {
+        this.idItem = idItem;
         this.dataPedido = dataPedido;
         this.quantidade = quantidade;
         this.valorUnitario = valorUnitario;
@@ -37,12 +41,12 @@ public class ItemPedidos {
         this.idProduto = idProduto;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getIdItem() {
+        return idItem;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setIdItem(Integer idItem) {
+        this.idItem = idItem;
     }
 
     public LocalDateTime getDataPedido() {

@@ -11,9 +11,13 @@ import java.time.LocalDateTime;
 public class Estoque {
     @Id
     private Integer id;
-
+    
+    @Column(name = "data_pedido")
     private LocalDateTime dataPedido;
+    
+    @Column(name = "nivel_minimo")
     private double nivelMinimo;
+    
     private double quantidade;
     
     

@@ -11,8 +11,10 @@ import java.time.LocalDateTime;
 public class Pedidos {
      @Id
     private Integer id;
-
+     
+    @Column(name = "data_pedido") 
     private LocalDateTime dataPedido;
+    
     private String nomePedido;
     private String statusPedido;
     private double valorTotal;

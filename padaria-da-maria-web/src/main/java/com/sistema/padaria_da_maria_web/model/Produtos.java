@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "produtos")
-public class Produto {
+public class Produtos {
     @Id
     private Integer id;
 
@@ -15,10 +15,10 @@ public class Produto {
     private String nomeProduto;
     private Double preco;
 
-    public Produto() {
+    public Produtos() {
     }
 
-    public Produto(Integer id, String categoria, String nomeProduto, Double preco) {
+    public Produtos(Integer id, String categoria, String nomeProduto, Double preco) {
         this.id = id;
         this.categoria = categoria;
         this.nomeProduto = nomeProduto;
