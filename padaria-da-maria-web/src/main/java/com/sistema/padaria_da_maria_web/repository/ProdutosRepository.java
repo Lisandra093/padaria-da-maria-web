@@ -3,6 +3,6 @@ package com.sistema.padaria_da_maria_web.repository;
 import com.sistema.padaria_da_maria_web.model.Produtos;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProdutoRepository extends JpaRepository<Produtos, Integer> {
+public interface ProdutosRepository extends JpaRepository<Produtos, Integer> {
     
 }
