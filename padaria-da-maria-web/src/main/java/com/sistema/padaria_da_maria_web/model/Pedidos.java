@@ -5,11 +5,15 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Column;
 import java.time.LocalDateTime;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.PrePersist;
 
 @Entity
 @Table(name = "pedidos")
 public class Pedidos {
-     @Id
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Integer id;
      
     @Column(name = "data_pedido") 
@@ -24,6 +28,13 @@ public class Pedidos {
 
     public Pedidos() {
         
+    }
+    
+    @PrePersist
+    public void prePersist() {
+        if (dataPedido == null) {
+            dataPedido = LocalDateTime.now();
+        }
     }
 
     public Pedidos(Integer id, LocalDateTime dataPedido, String nomePedido, String statusPedido, double valorTotal, Integer idCliente) {

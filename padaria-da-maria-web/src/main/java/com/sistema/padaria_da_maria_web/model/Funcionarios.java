@@ -4,12 +4,16 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
 
 @Entity
 @Table(name = "funcionarios")
 public class Funcionarios {
     @Id
-     @Column(name = "idFunc")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idFunc")
     private Integer id;
 
     private String nome;

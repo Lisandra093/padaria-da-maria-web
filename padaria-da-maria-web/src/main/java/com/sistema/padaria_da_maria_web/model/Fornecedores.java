@@ -4,17 +4,24 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Column;
-
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Table(name = "fornecedores")
 public class Fornecedores {
     @Id
-     @Column(name = "idFornec")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_fornec", nullable = false)
     private Integer id;
-
+    
+    @Column(name = "cnpj", nullable = false)
     private String cnpj;
+    
+    @Column(name = "nome_empresa", nullable = false)
     private String nomeEmpresa;
+    
+    @Column(name = "produtos_fornec", nullable = false)
     private String produtosFornec;
     
     public Fornecedores() {

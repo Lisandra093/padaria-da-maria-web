@@ -5,12 +5,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Column;
 import java.time.LocalDateTime;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+        
 
 
 @Entity
-@Table(name = "caixa")
+@Table(name = "Caixa")
 public class Caixa {
      @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
     @Column(name = "idCaixa")
     private Integer idCaixa;
     
@@ -18,9 +22,13 @@ public class Caixa {
     @Column(name = "data")
     private LocalDateTime data;
     
+    @Column(name = "formaPagamento")
     private String formaPagamento;
+    
+    @Column(name = "tipoMovimentacao")
     private String tipoMovimentacao;
     
+    @Column(name = "valorMovimentado")
     private double valorMovimentado;
     
     public Caixa() {
@@ -74,7 +82,6 @@ public class Caixa {
     public void setValorMovimentado(double valorMovimentado) {
         this.valorMovimentado = valorMovimentado;
     }
-    
     
     
 }
