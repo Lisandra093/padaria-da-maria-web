@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+<link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>    
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+    <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index">
+    <img src="images/logo-padaria.jpg" alt="Logo Padaria da Maria" class="logo">
+    <span class="fw-bold text-rosa-medio">Padaria da Maria</span>
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index#sobre">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cardápio
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index#card-cafe">Café da Manhã</a></li>
+            <li><a class="dropdown-item" href="index#card-bebidas-quentes">Bebidas Quentes</a></li>
+            <li><a class="dropdown-item" href="index#card-bebidas-frias">Bebidas Frias</a></li>
+            <li><a class="dropdown-item" href="index#card-bolos">Bolos e Tortas</a></li>
+            <li><a class="dropdown-item" href="index#card-paes">Pães</a></li>
+            <li><a class="dropdown-item" href="index#card-croissant">Croissant</a></li>
+            <li><a class="dropdown-item" href="index#card-cucas">Cucas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="encomendas">Produtos sob encomenda</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="encomendas">Encomendas</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section class="container my-5">
+    <div class="row justify-content-center">
+    <div class="col-lg-8">
+    <div class="card border-0 shadow-sm p-4 p-md-5"
+    style="background-color: #F5EFEB; border-radius: 18px;">
+
+    <div class="text-center mb-4">
+    <h1 class="fw-bold"
+    style="color: #D96B43;">
+     Contato
+     </h1>
+     <p class="text-muted mb-0">
+        Preencha os campos do formulário ou
+        entre em contato diretamente conosco
+        pelo telefone ou WhatsApp.
+        </p>
+
+    </div>
+
+    <form id="formContato" novalidate>
+    <div class="mb-3">
+    <label
+        for="nome" class="form-label fw-bold" style="color: #D98880;">
+          Nome:
+        </label>
+
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+        <div class="invalid-feedback">
+            Por favor, informe seu nome.
+        </div>
+
+    </div>
+
+    <div class="mb-3">
+    <label for="email" class="form-label fw-bold" style="color: #D98880;">
+      E-mail:
+    </label>
+
+    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+    <div class="invalid-feedback">
+        Informe um e-mail válido.
+    </div>
+
+</div>
+
+<div class="mb-3">
+<label for="telefone" class="form-label fw-bold" style="color: #D98880;">
+  Telefone:
+</label>
+
+<input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(55) 99999-9999" required>
+<div class="invalid-feedback">
+    Informe seu telefone.
+  </div>
+
+</div>
+
+<div class="mb-4">
+<label for="mensagem" class="form-label fw-bold" style="color: #D98880;">
+   Mensagem:
+</label>
+<textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" 
+required></textarea>
+<div class="invalid-feedback">
+    Digite uma mensagem.
+  </div>
+
+</div>
+
+
+<div class="text-center">
+<button type="submit" class="btn btn-lg text-white fw-bold px-5" style=" background-color: #E88B74;
+border-radius: 30px;">
+<i class="bi bi-send me-2"></i>
+     Enviar Mensagem
+   </button>
+
+  </div>
+
+</form>
+
+
+<div class="text-center mt-4 pt-4"
+style="border-top: 1px solid #E8CFC7;">
+<p class="text-muted mb-2">
+    Prefere falar diretamente conosco?
+</p>
+<button
+  type="button"
+    class="btn text-white fw-bold px-4"
+    style="
+    background-color: #25D366;
+    border-radius: 30px;
+    "
+    title="WhatsApp — contato demonstrativo"
+    aria-label="WhatsApp — contato demonstrativo">
+     
+    <i class="bi bi-whatsapp me-2"></i>
+         Falar pelo WhatsApp
+         </button>
+               
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- Rodapé do Site -->
+<footer class="pt-4 pb-3 mt-3" style="background-color: #F5EFEB; border-top: 2px solid #E88B74;">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold mb-3" style="color: #D96B43;">Padaria da Maria</h5>
+        <p class="text-muted small">
+          Compartilhando delícias, sabores e experiências inesquecíveis em momentos do seu dia a dia e das suas ocasiões especiais.
+          
+        </p>
+        
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="text-decoration-interactive fs-5" style="color: #D98880;" title="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-decoration-interactive fs-5" style="color: #D98880;" title="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-decoration-interactive fs-5" style="color: #D98880;" title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+        <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold mb-3" style="color: #D96B43;">Endereço</h5>
+        <p class="text-muted small mb-1">
+          <i class="bi bi-geo-alt-fill me-2" style="color: #E88B74;"></i>
+          Rua Montes Belos, 420 - Centro
+        </p>
+        <p class="text-muted small">
+          Santa Rosa - RS
+        </p>
+      </div>
+
+        <div class="col-lg-4 col-md-12">
+        <h5 class="fw-bold mb-3" style="color: #D96B43;">Horários e Contato</h5>
+        <p class="text-muted small mb-2">
+          <i class="bi bi-clock-fill me-2" style="color: #E88B74;"></i>
+          Segunda a Sábado: 07:30 - 19:00<br>
+          <span class="ms-4">Domingos: 08:00 - 13:00</span>
+        </p>
+        <p class="text-muted small mb-0">
+          <i class="bi bi-telephone-fill me-2" style="color: #E88B74;"></i>
+          (55) 99958-1957 
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- Linha de Direitos Autorais -->
+    <hr class="linha-rodape">
+    <div class="row">
+      <div class="col text-center">
+        <p class="text-muted small mb-0">&copy; 2026 Padaria da Maria. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

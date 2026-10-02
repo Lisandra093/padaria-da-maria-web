@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+}
+
+
+.imagem-apresentacao {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 18px;
+}
+
+.quadro-apresentacao {
+    background-color: #F5EFEB;
+    border-radius: 18px;
+    padding: 45px;
+    min-height: 330px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(111, 81, 72, 0.12);
+    border-left: 6px solid #E88B74;
+}
+
+.quadro-apresentacao h1 {
+    color: #D96B43;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.quadro-apresentacao p {
+    color: #6F5148;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.navbar-custom {
+    background-color: #F5EFEB;
+    padding: 4px 12px;
+    min-height: 50px;
+}
+
+.logo {
+    height: 34px;
+    width: auto;
+    border-radius: 6px;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    white-space: nowrap;
+    color: #6F5148;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-custom .nav-link {
+    color: #6F5148;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 7px;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #FFFFFF;
+}
+
+.carousel-img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption h5 {
+    color: var(--rosa-medio);
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    color: var(--rosa-medio);
+    font-weight: 600;
+}
+
+.carousel-caption {
+    background-color: transparent;
+}
+
+.img-card-padaria {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-delicia {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-delicia:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(111, 81, 72, 0.15);
+}
+
+.imagem-encomenda-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imagem-encomenda {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+/* == Encomendas == */
+.pagina-cabecalho {
+    background-color: #F5EFEB;
+    padding: 45px 20px;
+}
+
+.card-encomenda {
+    border-radius: 18px;
+}
+
+.img-card-padaria {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
