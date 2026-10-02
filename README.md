@@ -33,8 +33,7 @@ A aplicação permite apresentar os produtos e serviços da Padaria da Maria atr
 - Banco de dados MySQL 
 - Bootstrap 5 e Bootstrap Icons
 - Postman
-- Jira
-- 
+- Jira 
 
  ## Testes
 Foram realizados testes de API utilizando o Postman, verificando o funcionamento dos endpoints desenvolvidos na aplicação.
