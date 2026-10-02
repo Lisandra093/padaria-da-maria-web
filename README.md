@@ -5,6 +5,7 @@ com integração entre front-end e back-end.
 
  ## Sobre o projeto
 A aplicação permite apresentar os produtos e serviços da Padaria da Maria através de uma interface web, incluindo:
+
 🏠 Home
 
 🍞 Cardápio de produtos
@@ -23,6 +24,7 @@ A aplicação permite apresentar os produtos e serviços da Padaria da Maria atr
 
 🌐 Navegação entre as páginas da aplicação
 
+
  ## 🛠️ Tecnologias utilizadas
 - Java 17
 - Spring Boot 3.2.5
@@ -32,9 +34,11 @@ A aplicação permite apresentar os produtos e serviços da Padaria da Maria atr
 - Bootstrap 5 e Bootstrap Icons
 - Postman
 - Jira
+- 
 
  ## Testes
 Foram realizados testes de API utilizando o Postman, verificando o funcionamento dos endpoints desenvolvidos na aplicação.
+
 
  ##  🐞 Bugtracking
 Foi utilizado o Jira para registrar e acompanhar os bugs encontrados durante os testes da aplicação.
