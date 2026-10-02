@@ -1,10 +1,9 @@
 # Padaria da Maria Web
-
 Sistema web desenvolvido para a Padaria da Maria, como parte do Projeto Integrador.
 O projeto representa a versão web do sistema desenvolvido anteriormente, utilizando Java, Spring Boot, Spring MVC, Thymeleaf e MySQL, 
 com integração entre front-end e back-end.
 
-##  Sobre o projeto
+## Sobre o projeto
 A aplicação permite apresentar os produtos e serviços da Padaria da Maria através de uma interface web, incluindo:
 🏠 Home
 
