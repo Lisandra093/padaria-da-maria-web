@@ -1,9 +1,9 @@
-# Padaria da Maria Web
+ # Padaria da Maria Web
 Sistema web desenvolvido para a Padaria da Maria, como parte do Projeto Integrador.
 O projeto representa a versão web do sistema desenvolvido anteriormente, utilizando Java, Spring Boot, Spring MVC, Thymeleaf e MySQL, 
 com integração entre front-end e back-end.
 
-## Sobre o projeto
+ ## Sobre o projeto
 A aplicação permite apresentar os produtos e serviços da Padaria da Maria através de uma interface web, incluindo:
 🏠 Home
 
@@ -23,7 +23,7 @@ A aplicação permite apresentar os produtos e serviços da Padaria da Maria atr
 
 🌐 Navegação entre as páginas da aplicação
 
-## 🛠️ Tecnologias utilizadas
+ ## 🛠️ Tecnologias utilizadas
 - Java 17
 - Spring Boot 3.2.5
 - Spring MVC e Spring Data JPA
@@ -33,10 +33,10 @@ A aplicação permite apresentar os produtos e serviços da Padaria da Maria atr
 - Postman
 - Jira
 
-## Testes
+ ## Testes
 Foram realizados testes de API utilizando o Postman, verificando o funcionamento dos endpoints desenvolvidos na aplicação.
 
-##  🐞 Bugtracking
+ ##  🐞 Bugtracking
 Foi utilizado o Jira para registrar e acompanhar os bugs encontrados durante os testes da aplicação.
 Os problemas identificados foram analisados, corrigidos e testados novamente para verificar o funcionamento da aplicação após os 
 ajustes.
